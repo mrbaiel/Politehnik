@@ -1,5 +1,8 @@
 from app import app
 from flask import render_template
+from flask_sqlalchemy import SQLAlchemy
+
+
 
 
 @app.route("/")
@@ -16,6 +19,7 @@ def about():
 @app.route("/schedule")
 def schedule():
     return render_template("schedule.html")
+
 
 @app.route("/coaches")
 def coaches():
